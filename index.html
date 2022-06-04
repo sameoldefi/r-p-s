@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let userChoice;
+
+
+
+function computerPlay(){
+    const choice = ['rock', 'paper', 'scissors'];
+    let computerRandom = Math.floor(Math.random()* (3 - 0) + 0 );
+    let computerSelection = choice[computerRandom];
+    return computerSelection
+}
+
+function result () {
+let computerChoice = computerPlay();
+// -----------------Player choice - Rock-------
+if ( userChoice.toLowerCase() == 'rock' && computerChoice == 'rock' ){
+return tieResult = "It's A Tie ! ! ! "
+}
+else if (userChoice.toLowerCase() == 'rock' && computerChoice == 'paper'){
+    return loseResult = "You Lost"
+}
+else if (userChoice.toLowerCase() == 'rock' && computerChoice == 'scissors'){
+    return  winResult = "You Won!!!"
+}
+//------------ Player choice - Paper --------------------
+else if ( userChoice.toLowerCase() == 'paper' && computerChoice == 'rock' ){
+    return  winResult = "You Won!!!"
+}
+else if(userChoice.toLowerCase() == 'paper' && computerChoice == 'paper'){
+    return tieResult = "It's A Tie ! ! ! "
+}
+else if(userChoice.toLowerCase() == 'paper' && computerChoice == 'scissors'){
+    return loseResult = "You Lost"
+}
+//-------- Player choice - scissors ------------------
+else if (userChoice.toLowerCase() == 'scissors' && computerChoice == 'rock'){
+    return loseResult = "You Lost"
+}
+else if (userChoice.toLowerCase() == 'scissors' && computerChoice == 'paper'){
+    return  winResult = "You Won!!!"
+}
+else if (userChoice.toLowerCase() == 'scissors' && computerChoice == 'scissors'){
+    return tieResult = "It's A Tie ! ! ! "
+}
+else {
+    return notRight = "No"
+}
+
+}
+
+
+function play(){
+userChoice = prompt("Let's Play Some ROCK PAPER SCISSORS");
+alert("Computer's Choice :" + computerPlay());
+alert("Player :" + userChoice )
+alert(result());
+
+
+}
+play()
+
+    </script>
+</body>
+</html>
