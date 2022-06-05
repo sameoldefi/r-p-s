@@ -26,7 +26,7 @@ function computerPlay(){
 function result () {
 let computerChoice = computerPlay();
 
-// -----------------Player choice - Rock-------
+// ---------------------- Player choice - Rock ----------------------
 
 if ( userChoice.toLowerCase() === 'rock' && computerChoice == 'rock' ){
     tie++
@@ -41,7 +41,7 @@ else if (userChoice.toLowerCase() === 'rock' && computerChoice == 'scissors'){
     return  winResult = "Player: " + userChoice + '\n' + "Computer: "+ computerChoice + '\n' + "You Won!!!";
 }
 
-//------------ Player choice - Paper --------------------
+// ----------------------  Player choice - Paper ----------------------
 
 else if ( userChoice.toLowerCase() === 'paper' && computerChoice == 'rock' ){
     win++
@@ -56,7 +56,7 @@ else if(userChoice.toLowerCase() === 'paper' && computerChoice == 'scissors'){
     return loseResult =  "Player: " + userChoice + '\n' + "Computer: "+ computerChoice + '\n' +"You Lost Paper loses to scissors";
 }
 
-//-------- Player choice - scissors ------------------
+// ---------------------- Player choice - scissors ----------------------
 
 else if (userChoice.toLowerCase() === 'scissors' && computerChoice == 'rock'){
     lose++
@@ -77,6 +77,7 @@ else {
 
 }
 
+// ---------------------- Start Game ----------------------
 
 function play(){
 
@@ -84,11 +85,11 @@ function play(){
 userChoice = prompt("Let's Play Some ROCK PAPER SCISSORS");
 alert(result());
 alert('Game: ' + i +'/5\r' + 'SCORE - \rYou:' + win + '\rComputer: ' + lose +'\rTies: ' + tie);
-if (wrongAnswer == 1) {
-    i--;
-    wrongAnswer --;
-}
+     if (wrongAnswer == 1) {
+      i--;
+      wrongAnswer --;
     }
+  }
 }
 
 play()
