@@ -1,4 +1,4 @@
-let userChoice;
+// let userChoice;
 let win = 0
 let lose = 0
 let tie = 0
@@ -13,7 +13,7 @@ function computerPlay(){
     return computerSelection;
 }
 
-function result () {
+function result (userChoice) {
 let computerChoice = computerPlay();
 
 // ---------------------- Player choice - Rock ----------------------
@@ -68,15 +68,13 @@ else {
 }
 
 // ---------------------- Start Game ----------------------
-function play(){
 
-userChoice = prompt("Let's Play Some ROCK PAPER SCISSORS");
-alert(result());
-     if (wrongAnswer == 1) {
-      i--;
-      wrongAnswer --;
-    }
-  }
+const rockBtn = document.querySelector('#button1');
+const paperBtn = document.querySelector('#button2');
+const scissorsBtn = document.querySelector('#button3');
 
-play()
+rockBtn.addEventListener('click', () => console.log(result('Rock')));
+paperBtn.addEventListener('click', () => console.log(result('Paper')));
+scissorsBtn.addEventListener('click', () => console.log(result('Scissors')));
 
+ 
