@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- <button id="button0">Start</button> -->
-    <button id="button1">Rock</button>
-    <button id="button2">Paper</button>
-    <button id="button3">Scissors</button>
-    <script src="script.js">
-            // for (let i = 1; i < 6; i++ ){
-// alert('Game: ' + i +'/5\r' + 'SCORE - \rYou:' + win + '\rComputer: ' + lose +'\rTies: ' + tie);
-// }
-    </script>
+    <header>
+        <h1>Welcome to - Rock Papper Scissors!</h1>
+    </header>
+
+    <main>
+        <div class="container" id="theBattle">
+            <div class="user" id="usersChoice">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="computer" id="computersGame">
+                <p>Computers Choice</p>
+                <p id="computersResult"></p>
+            </div>
+        </div>
+            <h2>Let's see who won in this round</h2>
+                <p id="gameResult"></p>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

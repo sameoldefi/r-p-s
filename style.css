@@ -1,0 +1,36 @@
+body {
+/* background-color: #bfffb8;
+opacity: 0.4;
+background-image: radial-gradient(circle at center center, #14d7ec, #bfffb8), repeating-radial-gradient(circle at center center, #14d7ec, #14d7ec, 8px, transparent 16px, transparent 8px);
+background-blend-mode: multiply; */
+
+}
+
+
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+header {
+    display: flex;
+    text-align: center;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+h2 {
+    text-align: center;
+}
